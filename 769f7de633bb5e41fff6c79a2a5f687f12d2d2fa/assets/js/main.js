@@ -108,7 +108,7 @@ document.getElementById("copyright").innerHTML = "Copyright © " + new Date().ge
 
 /* Erzeugt automatisch immer die korrekte Anzahl an Jahren Erfahrung */
 // Oben bei Kurzprofil von mir
-document.getElementById("erfahrung1").innerHTML = (new Date().getFullYear()-1997) + " Jahre (privat + beruflich)";
+document.getElementById("erfahrung1").innerHTML = (new Date().getFullYear()-1997) + " Jahre (Privat + Beruflich)";
 // Unten bei Countern
 document.getElementById("erfahrung2").innerHTML = (new Date().getFullYear()-1997);
 
