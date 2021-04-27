@@ -105,3 +105,35 @@
 
 /* Erzeugt automatisch immer das korrekte Jahr */
 document.getElementById("copyright").innerHTML = "Copyright © " + new Date().getFullYear()+ " K. Hartmann All Rights Reserved";
+
+/* Erzeugt automatisch immer die korrekte Anzahl an Jahren Erfahrung */
+// Oben bei Kurzprofil von mir
+document.getElementById("erfahrung1").innerHTML = (new Date().getFullYear()-1997) + " Jahre (privat + beruflich)";
+// Unten bei Countern
+document.getElementById("erfahrung2").innerHTML = (new Date().getFullYear()-1997);
+
+
+
+/* 
+
+Erzeugt automatisch immer mein korrektes Alter!
+
+In JavaScript werden die Monate von 0-11 dargestellt werden, also Oktober = 9
+In JavaScript werden die Tage von 1-31 gezählt
+
+Zuerst wird der aktuelle Monat und der aktuelle Tag geladen, 
+dann wird verglichen ob der Monat >= 9 und ob der Tag >= 21 (Mein Geburtstag) ist
+und dann entweder Minus 1989 (vor meinem Geburtstag) oder eben Minus 1988 (an/nach meinem Geburtstag) gerechnet.
+
+*/
+
+var monat = new Date().getMonth();
+var tage = new Date().getDate();
+
+if(monat >= 9 && tage >= 21){
+    //bevor ich im laufenden Jahr Geburtstag habe
+    document.getElementById("alter").innerHTML = (new Date().getFullYear()-1988) + " Jahre";
+}else{
+    //an bzw. nach dem ich im laufenden Jahr Geburtstag habe
+    document.getElementById("alter").innerHTML = (new Date().getFullYear()-1989) + " Jahre";
+    }
