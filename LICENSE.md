@@ -1,6 +1,6 @@
 # License and Terms of Use (All Rights Reserved)
 
-Copyright (c) 2024 kevin-hartmann. All rights reserved.
+Copyright (c) 2026 kevin-hartmann. All rights reserved.
 
 ### 1. Ownership and Restrictions
 All contents, source code, and files in this repository are the private property of the owner. Any form of reproduction, copying, modification, distribution, or "cloning" of this repository for purposes other than personal viewing on GitHub is strictly prohibited without express written permission from the owner.
